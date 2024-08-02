@@ -1,0 +1,656 @@
+Test Case 1: Successful Sign-Up with Valid Credentials
+Precondition: User is not logged in.
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign Up" button/link.
+Enter a valid email address.
+Enter a valid password.
+Confirm the password by entering the same password again.
+Click on the "Sign Up" button.
+Expected Result: User should be successfully signed up and redirected to the welcome/dashboard page.
+Test Case 2: Sign-Up with Existing Email
+Precondition: User with the provided email already exists.
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign Up" button/link.
+Enter an existing email address.
+Enter a valid password.
+Confirm the password by entering the same password again.
+Click on the "Sign Up" button.
+Expected Result: User should receive an error message indicating that the email is already in use.
+Test Case 3: Sign-Up with Invalid Email Format
+Precondition: User is not logged in.
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign Up" button/link.
+Enter an invalid email address (e.g., "invalidemail").
+Enter a valid password.
+Confirm the password by entering the same password again.
+Click on the "Sign Up" button.
+Expected Result: User should receive an error message indicating that the email format is invalid.
+Test Case 4: Sign-Up with Weak Password
+Precondition: User is not logged in.
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign Up" button/link.
+Enter a valid email address.
+Enter a weak password (e.g., "12345").
+Confirm the password by entering the same password again.
+Click on the "Sign Up" button.
+Expected Result: User should receive an error message indicating that the password is too weak.
+Test Case 5: Sign-Up with Mismatched Passwords
+Precondition: User is not logged in.
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign Up" button/link.
+Enter a valid email address.
+Enter a valid password.
+Confirm the password by entering a different password.
+Click on the "Sign Up" button.
+Expected Result: User should receive an error message indicating that the passwords do not match.
+Test Case 6: Sign-Up with Empty Fields
+Precondition: User is not logged in.
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign Up" button/link.
+Leave the email, password, and confirm password fields empty.
+Click on the "Sign Up" button.
+Expected Result: User should receive error messages indicating that all fields are required.
+Test Case 7: Check Sign-Up Button Disabled Initially
+Precondition: User is not logged in.
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign Up" button/link.
+Verify if the "Sign Up" button is disabled initially.
+Expected Result: The "Sign Up" button should be disabled until all required fields are filled out correctly.
+Test Case 8: Sign-Up with Terms and Conditions
+Precondition: User is not logged in.
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign Up" button/link.
+Enter a valid email address.
+Enter a valid password.
+Confirm the password by entering the same password again.
+Check the "Terms and Conditions" checkbox.
+Click on the "Sign Up" button.
+Expected Result: User should be successfully signed up and redirected to the welcome/dashboard page.
+Test Case 9: Sign-Up without Accepting Terms and Conditions
+Precondition: User is not logged in.
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign Up" button/link.
+Enter a valid email address.
+Enter a valid password.
+Confirm the password by entering the same password again.
+Do not check the "Terms and Conditions" checkbox.
+Click on the "Sign Up" button.
+Expected Result: User should receive an error message indicating that accepting the terms and conditions is required.
+Test Case 10: Verify Sign-In Button is Visible
+Precondition: User is on the landing page of "https://dev.3trade.xyz".
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Locate the "Sign in" button on the landing page.
+Expected Result: The "Sign in" button should be visible on the landing page.
+Test Case 11: Click on Sign-In Button
+Precondition: User has located the "Sign in" button.
+Test Steps:
+Click on the "Sign in" button.
+Expected Result: The user should be redirected to the sign-in page.
+Test Case 12: Verify Sign-In Button Functionality
+Precondition: User is on the landing page of "https://dev.3trade.xyz".
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign in" button.
+Expected Result: The user should successfully navigate to the sign-in page without errors.
+Test Case 13: Verify Sign-In Button Accessibility
+Precondition: User is on the landing page of "https://dev.3trade.xyz".
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Use keyboard navigation (Tab key) to locate the "Sign in" button.
+Press "Enter" to activate the "Sign in" button.
+Expected Result: The user should be redirected to the sign-in page, confirming that the button is accessible via keyboard navigation.
+Test Case 14: Verify Sign-In Button Color and Style
+Precondition: User is on the landing page of "https://dev.3trade.xyz".
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Locate the "Sign in" button.
+Inspect the button's color, font style, and size.
+Expected Result: The "Sign in" button should match the expected design specifications (color, font, size) as per the UI design.
+Test Case 15: Verify Sign-In Button Position
+Precondition: User is on the landing page of "https://dev.3trade.xyz".
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Locate the "Sign in" button.
+Measure the button's position relative to other elements on the page (e.g., header, footer).
+Expected Result: The "Sign in" button should be positioned consistently according to the layout specifications.
+Test Case 16: Verify Button Disabled State
+Precondition: User is on the landing page of "https://dev.3trade.xyz" (before any sign-in requirement).
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Locate the "Sign in" button.
+Check if the button is disabled (if applicable, for example, if the user must first interact with the page).
+Expected Result: The "Sign in" button should be enabled and clickable for the user.
+Test Case 17: Verify Responsive Behavior of Sign-In Button
+Precondition: User is on the landing page of "https://dev.3trade.xyz".
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Resize the browser window to different screen sizes (e.g., mobile, tablet, desktop).
+Check the visibility and functionality of the "Sign in" button at each screen size.
+Expected Result: The "Sign in" button should remain visible and functional across different screen sizes.
+Test Case 18: Verify Sign-Up Button is Visible
+Precondition: User is on the sign-in page of "https://dev.3trade.xyz".
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign in" button to navigate to the sign-in page.
+Locate the "Sign up" button on the sign-in page.
+Expected Result: The "Sign up" button should be visible on the sign-in page.
+Test Case 19: Click on Sign-Up Button
+Precondition: User has located the "Sign up" button on the sign-in page.
+Test Steps:
+Click on the "Sign up" button.
+Expected Result: The user should be redirected to the sign-up initiation page.
+Test Case 20: Verify Sign-Up Button Functionality
+Precondition: User is on the sign-in page of "https://dev.3trade.xyz".
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign in" button to navigate to the sign-in page.
+Click on the "Sign up" button.
+Expected Result: The user should successfully navigate to the sign-up initiation page without any errors.
+Test Case 21: Verify Sign-Up Button Accessibility
+Precondition: User is on the sign-in page of "https://dev.3trade.xyz".
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign in" button to navigate to the sign-in page.
+Use keyboard navigation (Tab key) to locate the "Sign up" button.
+Press "Enter" to activate the "Sign up" button.
+Expected Result: The user should be redirected to the sign-up initiation page, confirming that the button is accessible via keyboard navigation.
+Test Case 22: Verify Sign-Up Button Color and Style
+Precondition: User is on the sign-in page of "https://dev.3trade.xyz".
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign in" button to navigate to the sign-in page.
+Locate the "Sign up" button.
+Inspect the button's color, font style, and size.
+Expected Result: The "Sign up" button should match the expected design specifications (color, font, size) as per the UI design.
+Test Case 23: Verify Sign-Up Button Position
+Precondition: User is on the sign-in page of "https://dev.3trade.xyz".
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign in" button to navigate to the sign-in page.
+Locate the "Sign up" button.
+Measure the button's position relative to other elements on the page (e.g., other buttons, text fields).
+Expected Result: The "Sign up" button should be positioned consistently according to the layout specifications.
+Test Case 24: Verify Button Disabled State
+Precondition: User is on the sign-in page of "https://dev.3trade.xyz" (before any sign-in requirement).
+Test Steps:
+Open a web browser and navigate to "https://dev.3trade.xyz".
+Click on the "Sign in" button to navigate to the sign-in page.
+Check if the "Sign up" button is disabled (if applicable, for example, if the user must first interact with the page).
+Expected Result: The "Sign up" button should be enabled and clickable for the user.
+Test Case 25: Verify Visibility of Continue to Setup Instructions Button
+Precondition: User has clicked on the "Sign up" button and is on the sign-up initiation page.
+Test Steps:
+Click on the "Sign up" button to navigate to the sign-up initiation page.
+Check if the "Continue to setup instructions" button is visible on the page.
+Expected Result: The "Continue to setup instructions" button should be visible on the sign-up initiation page.
+Test Case 26: Click on Continue to Setup Instructions Button
+Precondition: User has verified that the "Continue to setup instructions" button is visible.
+Test Steps:
+Click on the "Continue to setup instructions" button.
+Expected Result: The user should be redirected to the setup instructions page.
+Test Case 27: Verify Button Functionality
+Precondition: User is on the sign-up initiation page after clicking the "Sign up" button.
+Test Steps:
+Click on the "Sign up" button to navigate to the sign-up initiation page.
+Click on the "Continue to setup instructions" button.
+Expected Result: The user should successfully navigate to the setup instructions page without any errors.
+Test Case 28: Verify Button Accessibility
+Precondition: User is on the sign-up initiation page.
+Test Steps:
+Click on the "Sign up" button to navigate to the sign-up initiation page.
+Use keyboard navigation (Tab key) to locate the "Continue to setup instructions" button.
+Press "Enter" to activate the button.
+Expected Result: The user should be redirected to the setup instructions page, confirming that the button is accessible via keyboard navigation.
+Test Case 29: Verify Button Color and Style
+Precondition: User is on the sign-up initiation page.
+Test Steps:
+Click on the "Sign up" button to navigate to the sign-up initiation page.
+Locate the "Continue to setup instructions" button.
+Inspect the button's color, font style, and size.
+Expected Result: The "Continue to setup instructions" button should match the expected design specifications (color, font, size) as per the UI design.
+Test Case 30: Verify Button Position
+Precondition: User is on the sign-up initiation page.
+Test Steps:
+Click on the "Sign up" button to navigate to the sign-up initiation page.
+Locate the "Continue to setup instructions" button.
+Measure the button's position relative to other elements on the page (e.g., other buttons, text).
+Expected Result: The "Continue to setup instructions" button should be positioned consistently according to the layout specifications.
+Test Case 31: Verify Button Disabled State
+Precondition: User is on the sign-up initiation page.
+Test Steps:
+Click on the "Sign up" button to navigate to the sign-up initiation page.
+Check if the "Continue to setup instructions" button is disabled (if applicable, for example, if the user must complete a prerequisite).
+Expected Result: The "Continue to setup instructions" button should be enabled and clickable for the user.
+Test Case 32: Verify Responsive Behavior of Continue to Setup Instructions Button
+Precondition: User is on the sign-up initiation page.
+Test Steps:
+Click on the "Sign up" button to navigate to the sign-up initiation page.
+Resize the browser window to different screen sizes (e.g., mobile, tablet, desktop).
+Check the visibility and functionality of the "Continue to setup instructions" button at each screen size.
+Expected Result: The "Continue to setup instructions" button should remain visible and functional across different screen sizes.
+Test Case 33: Verify Navigation After Clicking the Button
+Precondition: User has clicked on the "Continue to setup instructions" button.
+Test Steps:
+Click on the "Sign up" button to navigate to the sign-up initiation page.
+Click on the "Continue to setup instructions" button.
+Expected Result: The user should be redirected to the setup instructions page, and the page title or header should indicate successful navigation.
+Test Case 34: Verify Visibility of Download Button
+Precondition: User is on the setup instructions page after clicking the "Continue to setup instructions" button.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Locate the "Download" button on the setup instructions page.
+Expected Result: The "Download" button should be visible on the setup instructions page.
+Test Case 35: Click on Download Button
+Precondition: User has verified that the "Download" button is visible.
+Test Steps:
+Click on the "Download" button.
+Expected Result: The download process for the necessary files should begin, and a download confirmation message should appear (if applicable).
+Test Case 36: Verify Button Functionality
+Precondition: User is on the setup instructions page.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Click on the "Download" button.
+Expected Result: The necessary files should start downloading without any errors, and the correct file format and name should be displayed.
+Test Case 37: Verify Button Accessibility
+Precondition: User is on the setup instructions page.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Use keyboard navigation (Tab key) to locate the "Download" button.
+Press "Enter" to activate the button.
+Expected Result: The download process for the necessary files should begin, confirming that the button is accessible via keyboard navigation.
+Test Case 38: Verify Button Color and Style
+Precondition: User is on the setup instructions page.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Locate the "Download" button.
+Inspect the button's color, font style, and size.
+Expected Result: The "Download" button should match the expected design specifications (color, font, size) as per the UI design.
+Test Case 39: Verify Button Position
+Precondition: User is on the setup instructions page.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Locate the "Download" button.
+Measure the button's position relative to other elements on the page (e.g., other buttons, text instructions).
+Expected Result: The "Download" button should be positioned consistently according to the layout specifications.
+Test Case 40: Verify Button Disabled State
+Precondition: User is on the setup instructions page.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Check if the "Download" button is disabled (if applicable, for example, if prerequisites are not met).
+Expected Result: The "Download" button should be enabled and clickable for the user.
+Test Case 41: Verify Responsive Behavior of Download Button
+Precondition: User is on the setup instructions page.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Resize the browser window to different screen sizes (e.g., mobile, tablet, desktop).
+Check the visibility and functionality of the "Download" button at each screen size.
+Expected Result: The "Download" button should remain visible and functional across different screen sizes.
+Test Case 42: Verify File Download Location
+Precondition: User has clicked the "Download" button.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Click on the "Download" button.
+Check the default download location on the user's system (e.g., Downloads folder).
+Expected Result: The downloaded file should be present in the specified download location.
+Test Case 43: Verify Download File Integrity
+Precondition: User has downloaded the necessary files.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Click on the "Download" button.
+After the download completes, open the downloaded file.
+Expected Result: The file should open successfully without any errors, confirming its integrity.
+Test Case 44: Verify Visibility of Continue to Sign-Up Button
+Precondition: User has completed the download process and is on the setup instructions page.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Click on the "Download" button and complete the download process.
+Check if the "Continue to Sign-up" button is visible on the setup instructions page.
+Expected Result: The "Continue to Sign-up" button should be visible on the setup instructions page after the download is complete.
+Test Case 45: Click on Continue to Sign-Up Button
+Precondition: User has verified that the "Continue to Sign-up" button is visible.
+Test Steps:
+Click on the "Continue to Sign-up" button.
+Expected Result: The user should be redirected to the sign-up page.
+Test Case 46: Verify Button Functionality
+Precondition: User is on the setup instructions page after completing the download.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Click on the "Download" button and complete the download process.
+Click on the "Continue to Sign-up" button.
+Expected Result: The user should successfully navigate to the sign-up page without any errors.
+Test Case 47: Verify Button Accessibility
+Precondition: User is on the setup instructions page after the download is complete.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Click on the "Download" button and complete the download process.
+Use keyboard navigation (Tab key) to locate the "Continue to Sign-up" button.
+Press "Enter" to activate the button.
+Expected Result: The user should be redirected to the sign-up page, confirming that the button is accessible via keyboard navigation.
+Test Case 48: Verify Button Color and Style
+Precondition: User is on the setup instructions page after completing the download.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Click on the "Download" button and complete the download process.
+Locate the "Continue to Sign-up" button.
+Inspect the button's color, font style, and size.
+Expected Result: The "Continue to Sign-up" button should match the expected design specifications (color, font, size) as per the UI design.
+Test Case 49: Verify Button Position
+Precondition: User is on the setup instructions page after completing the download.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Click on the "Download" button and complete the download process.
+Locate the "Continue to Sign-up" button.
+Measure the button's position relative to other elements on the page (e.g., other buttons, text).
+Expected Result: The "Continue to Sign-up" button should be positioned consistently according to
+ the layout specifications.
+Test Case 50: Verify Button Disabled State
+Precondition: User is on the setup instructions page after completing the download.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Click on the "Download" button and complete the download process.
+Check if the "Continue to Sign-up" button is disabled (if applicable, for example, if the user must complete additional prerequisites).
+Expected Result: The "Continue to Sign-up" button should be enabled and clickable for the user.
+Test Case 51: Verify Responsive Behavior of Continue to Sign-Up Button
+Precondition: User is on the setup instructions page after completing the download.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Click on the "Download" button and complete the download process.
+Resize the browser window to different screen sizes (e.g., mobile, tablet, desktop).
+Check the visibility and functionality of the "Continue to Sign-up" button at each screen size.
+Expected Result: The "Continue to Sign-up" button should remain visible and functional across different screen sizes.
+Test Case 52: Verify Navigation After Clicking the Button
+Precondition: User has clicked on the "Continue to Sign-up" button.
+Test Steps:
+Click on the "Continue to setup instructions" button to navigate to the setup instructions page.
+Click on the "Download" button and complete the download process.
+Click on the "Continue to Sign-up" button.
+Expected Result: The user should be redirected to the sign-up page, and the page title or header should indicate successful navigation.
+Test Case 53: Verify Business Email Field Visibility
+Precondition: User is on the sign-up page.
+Test Steps:
+Click on the "Continue to Sign-up" button to navigate to the sign-up page.
+Locate the "Business Email" field on the sign-up page.
+Expected Result: The "Business Email" field should be visible on the sign-up page.
+Test Case 54: Verify Organization Name Field Visibility
+Precondition: User is on the sign-up page.
+Test Steps:
+Click on the "Continue to Sign-up" button to navigate to the sign-up page.
+Locate the "Organization Name" field on the sign-up page.
+Expected Result: The "Organization Name" field should be visible on the sign-up page.
+Test Case 55: Enter Valid Business Email
+Precondition: User is on the sign-up page.
+Test Steps:
+Click on the "Continue to Sign-up" button to navigate to the sign-up page.
+Locate the "Business Email" field.
+Enter a valid business email address (e.g., example@business.com) in the "Business Email" field.
+Expected Result: The valid email address should be entered without errors, and the field should accept the input.
+Test Case 56: Enter Valid Organization Name
+Precondition: User is on the sign-up page.
+Test Steps:
+Click on the "Continue to Sign-up" button to navigate to the sign-up page.
+Locate the "Organization Name" field.
+Enter a valid organization name (e.g., Example Corp) in the "Organization Name" field.
+Expected Result: The valid organization name should be entered without errors, and the field should accept the input.
+Test Case 57: Verify Error Message for Invalid Email Format
+Precondition: User is on the sign-up page.
+Test Steps:
+Click on the "Continue to Sign-up" button to navigate to the sign-up page.
+Locate the "Business Email" field.
+Enter an invalid email format (e.g., invalid-email) in the "Business Email" field.
+Attempt to submit the form (if applicable).
+Expected Result: An error message should be displayed indicating that the email format is invalid.
+Test Case 58: Verify Required Fields Validation
+Precondition: User is on the sign-up page.
+Test Steps:
+Click on the "Continue to Sign-up" button to navigate to the sign-up page.
+Leave the "Business Email" and "Organization Name" fields empty.
+Attempt to submit the form (if applicable).
+Expected Result: Error messages should be displayed indicating that the required fields must be filled in.
+Test Case 59: Verify Input Field Limits
+Precondition: User is on the sign-up page.
+Test Steps:
+Click on the "Continue to Sign-up" button to navigate to the sign-up page.
+Locate the "Business Email" field and enter a string that exceeds the character limit (if applicable).
+Locate the "Organization Name" field and enter a string that exceeds the character limit (if applicable).
+Expected Result: The fields should not accept input beyond the specified character limits, and an appropriate error message should be displayed.
+Test Case 60: Verify Successful Input Submission
+Precondition: User is on the sign-up page after filling in the fields.
+Test Steps:
+Click on the "Continue to Sign-up" button to navigate to the sign-up page.
+Enter a valid business email (e.g., example@business.com).
+Enter a valid organization name (e.g., Example Corp).
+Click the submit button (if applicable).
+Expected Result: The form should be submitted successfully, and the user should be redirected to the next step in the sign-up process or see a confirmation message.
+Test Case 61: Verify Autofill Functionality
+Precondition: User is on the sign-up page.
+Test Steps:
+Click on the "Continue to Sign-up" button to navigate to the sign-up page.
+Check if the browser's autofill feature populates the "Business Email" and "Organization Name" fields with previously saved data.
+Expected Result: The fields should be auto-filled with the correct information, and the user should have the option to modify it.
+Test Case 62: Verify Clear Button Functionality (if applicable)
+Precondition: User is on the sign-up page.
+Test Steps:
+Click on the "Continue to Sign-up" button to navigate to the sign-up page.
+Enter a valid business email and organization name.
+Click on the "Clear" button (if applicable).
+Expected Result: The "Business Email" and "Organization Name" fields should be cleared of any input.
+Test Case 63: Verify First Name Field Visibility
+Precondition: User is on the sign-up page after completing the business information.
+Test Steps:
+Navigate to the sign-up page after filling in the business information.
+Locate the "First Name" field.
+Expected Result: The "First Name" field should be visible on the sign-up page.
+Test Case 64: Verify Last Name Field Visibility
+Precondition: User is on the sign-up page after completing the business information.
+Test Steps:
+Navigate to the sign-up page after filling in the business information.
+Locate the "Last Name" field.
+Expected Result: The "Last Name" field should be visible on the sign-up page.
+Test Case 65: Verify Username Field Visibility
+Precondition: User is on the sign-up page after completing the business information.
+Test Steps:
+Navigate to the sign-up page after filling in the business information.
+Locate the "Username" field.
+Expected Result: The "Username" field should be visible on the sign-up page.
+Test Case 66: Verify Password Field Visibility
+Precondition: User is on the sign-up page after completing the business information.
+Test Steps:
+Navigate to the sign-up page after filling in the business information.
+Locate the "Password" field.
+Expected Result: The "Password" field should be visible on the sign-up page.
+Test Case 67: Verify Confirm Password Field Visibility
+Precondition: User is on the sign-up page after completing the business information.
+Test Steps:
+Navigate to the sign-up page after filling in the business information.
+Locate the "Confirm Password" field.
+Expected Result: The "Confirm Password" field should be visible on the sign-up page.
+Test Case 68: Verify Validator Party Field Visibility
+Precondition: User is on the sign-up page after completing the business information.
+Test Steps:
+Navigate to the sign-up page after filling in the business information.
+Locate the "Validator Party" field.
+Expected Result: The "Validator Party" field should be visible on the sign-up page.
+Test Case 69: Enter Valid First Name
+Precondition: User is on the sign-up page after completing the business information.
+Test Steps:
+Navigate to the sign-up page after filling in the business information.
+Enter a valid first name (e.g., John) in the "First Name" field.
+Expected Result: The valid first name should be entered without errors.
+Test Case 70: Enter Valid Last Name
+Precondition: User is on the sign-up page after completing the business information.
+Test Steps:
+Navigate to the sign-up page after filling in the business information.
+Enter a valid last name (e.g., Doe) in the "Last Name" field.
+Expected Result: The valid last name should be entered without errors.
+Test Case 71: Enter Valid Username
+Precondition: User is on the sign-up page after completing the business information.
+Test Steps:
+Navigate to the sign-up page after filling in the business information.
+Enter a valid username (e.g., johndoe123) in the "Username" field.
+Expected Result: The valid username should be entered without errors.
+Test Case 72: Enter Valid Password
+Precondition: User is on the sign-up page after completing the business information.
+Test Steps:
+Navigate to the sign-up page after filling in the business information.
+Enter a valid password (e.g., Password123!) in the "Password" field.
+Expected Result: The valid password should be entered without errors.
+Test Case 73: Enter Valid Confirm Password
+Precondition: User is on the sign-up page after completing the business information.
+Test Steps:
+Navigate to the sign-up page after filling in the business information.
+Enter the same valid password (e.g., Password123!) in the "Confirm Password" field.
+Expected Result: The confirm password should match the password without errors.
+Test Case 74: Enter Valid Validator Party
+Precondition: User is on the sign-up page after completing the business information.
+Test Steps:
+Navigate to the sign-up page after filling in the business information.
+Enter a valid validator party (e.g., Validator Inc.) in the "Validator Party" field.
+Expected Result: The valid validator party should be entered without errors.
+Test Case 75: Verify Password Mismatch Error
+Precondition: User is on the sign-up page after completing the business information.
+Test Steps:
+Navigate to the sign-up page after filling in the business information.
+Enter a valid password (e.g., Password123!) in the "Password" field.
+Enter a different password (e.g., DifferentPassword!) in the "Confirm Password" field.
+Attempt to submit the form (if applicable).
+Expected Result: An error message should be displayed indicating that the passwords do not match.
+Test Case 76: Verify Required Fields Validation
+Precondition: User is on the sign-up page after completing the business information.
+Test Steps:
+Navigate to the sign-up page after filling in the business information.
+Leave all personal details fields empty.
+Attempt to submit the form (if applicable).
+Expected Result: Error messages should be displayed indicating that the required fields must be filled in.
+Test Case 77: Verify Successful Input Submission
+Precondition: User is on the sign-up page after filling in the personal details.
+Test Steps:
+Navigate to the sign-up page after filling in the business information.
+Enter valid first name, last name, username, password, confirm password, and validator party.
+Click the submit button (if applicable).
+Expected Result: 
+Test Case 78: Verify All Entered Information on the Sign-Up Page
+Precondition: User has filled in all required fields (business information and personal details) on the sign-up page.
+Test Steps:
+Navigate to the sign-up page after filling in the business and personal information.
+Review all fields, including business email, organization name, first name, last name, username, password, confirm password, and validator party.
+Expected Result: All entered information should be accurately displayed in their respective fields.
+Test Case 79: Verify Required Fields Before Submission
+Precondition: User is on the sign-up page after filling in the information.
+Test Steps:
+Ensure all required fields (business email, organization name, first name, last name, username, password, confirm password, and validator party) are filled.
+Verify that there are no empty required fields before attempting to submit.
+Expected Result: All required fields should be filled, and the user should be able to proceed to submit the form.
+Test Case 80: Submit the Sign-Up Form with Valid Information
+Precondition: User is on the sign-up page and has filled in all required fields with valid information.
+Test Steps:
+Click the submit button (if applicable).
+Expected Result: The form should be submitted successfully, and the user should be redirected to the next step in the sign-up process (e.g., a confirmation page or dashboard).
+Test Case 81: Verify Error Message for Missing Required Fields
+Precondition: User is on the sign-up page with some required fields empty.
+Test Steps:
+Leave one or more required fields (e.g., business email, first name) empty.
+Click the submit button.
+Expected Result: An error message should be displayed for each empty required field, indicating that these fields must be completed before submission.
+Test Case 82: Verify Password Validation Before Submission
+Precondition: User is on the sign-up page after filling in the information.
+Test Steps:
+Enter a valid password in the "Password" field.
+Enter a different password in the "Confirm Password" field.
+Click the submit button.
+Expected Result: An error message should indicate that the passwords do not match, preventing submission.
+Test Case 83: Verify Confirmation of Successful Submission
+Precondition: User has successfully submitted the sign-up form.
+Test Steps:
+Observe the response after clicking the submit button.
+Expected Result: A confirmation message should appear, and the user should be redirected to a confirmation page or dashboard.
+Test Case 84: Verify Data Persistence After Submission
+Precondition: User has filled in all required fields and submitted the sign-up form.
+Test Steps:
+Navigate back to the sign-up page or refresh the page after submission.
+Expected Result: The fields should not retain the previously entered information, confirming that the data has been cleared after submission.
+Test Case 85: Verify System Response to Duplicate Username or Email
+Precondition: User is on the sign-up page and is attempting to use a username or email that already exists in the system.
+Test Steps:
+Enter an already used business email and username in the respective fields.
+Fill in the remaining required fields with valid information.
+Click the submit button.
+Expected Result: An error message should be displayed indicating that the username or email is already taken, preventing submission.
+Test Case 86: Verify Field Formatting Before Submission
+Precondition: User is on the sign-up page and has filled in all fields.
+Test Steps:
+Review the format of all fields (e.g., email format, password complexity).
+Attempt to submit the form.
+Expected Result: The form should only submit if all fields meet the specified formatting requirements, and appropriate error messages should appear for any incorrectly formatted fields.
+Test Case 87: Verify Submission with Valid Input After Error
+Precondition: User is on the sign-up page after encountering an error due to incorrect input.
+Test Steps:
+Correct any errors (e.g., matching passwords, filling in all required fields).
+Click the submit button.
+Expected Result: The form should be submitted successfully after all corrections are made, leading to a confirmation page or message.
+The form should be submitted successfully, and the user should be redirected to the next step in the sign-up process or see a confirmation message.
+Test Case 88: Verify Confirmation Message after Successful Sign-Up
+Precondition: User has completed the sign-up process and submitted the form.
+Test Steps:
+After submitting the sign-up form, wait for the confirmation response.
+Expected Result: A confirmation message should be displayed indicating that the sign-up process was successful (e.g., "Sign-up successful!").
+Test Case 89: Verify Redirection to Dashboard after Successful Sign-Up
+Precondition: User has completed the sign-up process and submitted the form.
+Test Steps:
+After submitting the sign-up form, observe the URL of the page.
+Expected Result: The user should be redirected to the dashboard or home page, and the URL should reflect the new page (e.g., https://dev.3trade.xyz/dashboard).
+Test Case 90: Verify Presence of User-Specific Elements on Dashboard
+Precondition: User has successfully signed up and been redirected to the dashboard.
+Test Steps:
+Check for the presence of user-specific elements (e.g., user name, welcome message, account settings).
+Expected Result: User-specific elements should be present, confirming that the user is logged in and the sign-up was successful.
+Test Case 91: Verify Session Management After Sign-Up
+Precondition: User has successfully signed up and been redirected to the dashboard.
+Test Steps:
+Close the browser and reopen it.
+Navigate back to https://dev.3trade.xyz.
+Verify if the user is still logged in automatically.
+Expected Result: The user should remain logged in and be redirected to the dashboard without needing to log in again.
+Test Case 92: Verify Confirmation Email (if applicable)
+Precondition: User has completed the sign-up process with a valid email.
+Test Steps:
+Check the registered email inbox for a confirmation email.
+Expected Result: A confirmation email should be received, confirming successful sign-up and providing any necessary follow-up instructions.
+Test Case 93: Verify Error Handling on Sign-Up Failure
+Precondition: User has attempted to sign up but encountered an error (e.g., duplicate email).
+Test Steps:
+Observe the error message displayed after an unsuccessful sign-up attempt.
+Expected Result: An appropriate error message should be shown, and the user should remain on the sign-up page for corrections.
+Test Case 94: Verify Logout Functionality After Successful Sign-Up
+Precondition: User has successfully signed up and is on the dashboard.
+Test Steps:
+Click on the "Logout" button or link.
+Observe the page after logging out.
+Expected Result: The user should be logged out successfully and redirected to the landing page or sign-in page.
+Test Case 95: Verify Accessibility of the Dashboard Without Sign-Up
+Precondition: User has not signed up.
+Test Steps:
+Attempt to access the dashboard URL directly (e.g., https://dev.3trade.xyz/dashboard).
+Expected Result: The user should be redirected to the sign-in page or receive an error indicating that access is denied without signing up.
+Test Case 96: Verify User Information in Profile Settings (if applicable)
+Precondition: User has successfully signed up and is on the dashboard.
+Test Steps:
+Navigate to the profile settings or account settings page.
+Verify that the personal and business information entered during sign-up is correctly displayed.
+Expected Result: All previously entered information should be correctly populated in the profile settings.
+Test Case 97: Verify Responsiveness of Confirmation Message and Dashboard
+Precondition: User has successfully signed up and been redirected to the dashboard.
+Test Steps:
+Resize the browser window or test on different devices.
+Expected Result: The confirmation message and dashboard should remain responsive, displaying correctly on various screen sizes.
+
+
